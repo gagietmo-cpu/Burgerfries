@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme color mappings from Professional Polish guidelines */
+  --color-brand-red: #c62828;
+  --color-brand-yellow: #f4b400;
+  --color-brand-cream: #fff4e8;
+  --color-brand-black: #121212;
+}
+
+/* Base resets & custom animations representing the design */
+body {
+  background-color: #121212;
+  color: #FFF4E8;
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Professional Polish visual style classes */
+.hero-gradient {
+  background: radial-gradient(circle at 70% 50%, rgba(198, 40, 40, 0.15) 0%, rgba(18, 18, 18, 0) 70%);
+}
+
+.burger-shadow {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8));
+}
+
+.btn-shadow {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Custom gorgeous scrollbar styled to match the design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #c62828;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f4b400;
+}
+

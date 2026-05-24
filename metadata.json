@@ -1,0 +1,6 @@
+{
+  "name": "Smash Burger & Fries",
+  "description": "High-Converting Burger & Fries Order and Loyalty Hub featuring a cinematic menu, a full checkout engine with simulated live tracking, dynamic rewards, exit intent capturing, and a server-side AI-powered Craving Helper.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
